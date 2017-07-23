@@ -1,0 +1,25 @@
+
+
+
+<label>Server Name</label>
+<!-- $event is used to output the data with that event  -->
+<!-- <input type ="text" class ="form-control"(input)="onUpdateServerName($event)">   -->
+
+<!-- Two way Data Binding binding in both directions and good at changes -->
+<!-- <input type ="text" class ="form-control" [(ngModel)] = "serverName"> -->
+
+<!--event binding $event -> data emmit3d with the event  -->
+ <input type ="text" class ="form-control" (input)="onUpdateServerName($event)" > 
+
+
+
+
+<!--property binding + Event Binding  -->
+<button class = "btn btn-primary" [disabled]="allowNewServer" (click)="onCreateServer()">Add Server</button>
+<br>
+
+<!-- <h4>Server Creation status is: {{severCreationStatus}} </h4> -->
+<!--String Interpolation  -->
+<p> {{severCreationStatus}} </p>            
+<app-server></app-server>
+<app-server></app-server>
