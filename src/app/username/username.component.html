@@ -1,0 +1,16 @@
+
+
+<div class = "greenBox">
+ <!-- Two way Data Binding binding in both directions and good at changes  -->
+ <h4>Inputting username, capturing using two way data binding and outputting using string interlopation </h4>
+ <input type ="text" class ="form-control" [(ngModel)] = "userName"> 
+ <p></p>
+ <p></p>
+ <h4> You typed:  {{userName}} </h4>
+<p></p>
+
+ <button class = "btn btn-primary" [disabled] = "userNameCheck()" (click)="userNameReset()"  >Reset User</button> 
+
+
+
+</div>

@@ -20,6 +20,17 @@
 
 <!-- <h4>Server Creation status is: {{severCreationStatus}} </h4> -->
 <!--String Interpolation  -->
-<p> {{severCreationStatus}} </p>            
+<!-- <p> {{severCreationStatus}} </p>     -->
+
+
+<!--Directive of ngIf  -->
+<p *ngIf ="serverCreated; else noServer"> Server was created, server is called: {{serverName}} </p>
+
+<!-- Marker in the DOM -->
+<ng-template #noServer>
+    <p> No Server Created </p>
+</ng-template>
+
+<hr>
 <app-server></app-server>
 <app-server></app-server>
