@@ -1,0 +1,21 @@
+
+
+<button class = "btn btn-primary" (click)="clickButton()">Display paragraph</button>
+
+
+
+
+<p></p>
+
+
+<!-- <p [ngStyle]="{display: buttonStatus}"> This paragraph is going to be toggled </p> -->
+<!--ngIf: good for toggling  -->
+<p *ngIf ="status" > This paragraph is going to be toggled </p>
+
+
+<h4>The counter is at: {{ buttonClicks.length }}
+
+<ul *ngFor="let data of buttonClicks">
+  <li [ngClass]="{fifthElement: counterFunction() === true}">{{ data }}</li>
+</ul>
+
