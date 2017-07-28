@@ -18,26 +18,13 @@ export class Assignment2Component implements OnInit {
   }
 
 clickButton(){
-
   this.status = !this.status;
+  // this.buttonClicks.push(this.buttonClicks.length + 1);
+  this.buttonClicks.push(new Date());
 
-  this.buttonClicks.push(this.buttonClicks.length + 1);
- 
-   if (this.buttonStatus === "block"){
-    return this.buttonStatus = "none";
-  }else {
-    return this.buttonStatus ="block";
-  }
   }
 
-counterFunction(){
-  if(this.buttonClicks.length >= 5){
-    return true
-  }else {
-    return false
-  }
 
-}
 
 
 
